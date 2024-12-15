@@ -15,12 +15,8 @@ export default function Home() {
         </ol>
 
         <div className="w-full flex justify-between items-center flex-col sm:flex-row">
-          <Button asChild className="mr-4">
-            <a href="https://x.com/concernor">
-              Get Concerned
-              <ExternalLink className="w-4 h-4 ml-2" />
-            </a>
-          </Button>
+          <div>stay concerned. buidling the bag.</div>
+
           <div className="flex gap-1">
             <Button asChild size="icon">
               <a href="https://x.com/concernor">

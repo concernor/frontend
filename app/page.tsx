@@ -18,12 +18,12 @@ export default function Home() {
 
           <div className="flex gap-1">
             <Button asChild size="icon">
-              <a href="https://x.com/concernor">
+              <a href="https://x.com/concernor" target="_blank">
                 <SiX className="w-4 h-4" />
               </a>
             </Button>
             <Button asChild size="icon">
-              <a href="https://github.com/concernor">
+              <a href="https://github.com/concernor" target="_blank">
                 <SiGithub className="w-4 h-4" />
               </a>
             </Button>

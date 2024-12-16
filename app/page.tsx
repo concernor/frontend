@@ -3,8 +3,8 @@ import { TermsDialog } from "@/components/terms";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
-  SiDiscord,
-  SiFarcaster,
+  // SiDiscord,
+  // SiFarcaster,
   SiGithub,
   SiX,
 } from "@icons-pack/react-simple-icons";

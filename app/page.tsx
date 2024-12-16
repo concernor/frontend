@@ -40,7 +40,7 @@ export default function Home() {
                 <SiX className="w-3 h-3" />
               </a>
             </Button>
-            <Button asChild size="icon" className="bg-[#8a63d2]">
+            {/* <Button asChild size="icon" className="bg-[#8a63d2]">
               <a href="https://docs.concernor.xyz" target="_blank">
                 <SiFarcaster className="w-4 h-4 " />
               </a>
@@ -49,7 +49,7 @@ export default function Home() {
               <a href="https://docs.concernor.xyz" target="_blank">
                 <SiDiscord className="w-4 h-4" />
               </a>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </main>

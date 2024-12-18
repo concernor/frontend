@@ -46,7 +46,7 @@ export default function Home() {
         <main className="flex flex-col items-start gap-6 py-8">
           <div className="w-full flex flex-col gap-2 border border-gray-900 border-1 rounded-lg p-4">
             <div className="w-full flex flex-row justify-between items-center">
-              <h1 className="font-bold">concernor.eth</h1>
+              <h1 className="font-bold">The Concernooooorrrrr</h1>
               <a
                 href="https://x.com/pythianism/status/1867696590301147210"
                 target="_blank"

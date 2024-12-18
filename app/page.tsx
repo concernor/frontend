@@ -20,6 +20,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] px-4 sm:px-0">

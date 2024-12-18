@@ -121,10 +121,10 @@ export default function Home() {
                 </a>
               </Button>
 
-              <Button disabled size="icon" variant="ghost">
-                {/* <a href="https://docs.concernor.xyz" target="_blank"> */}
-                <SiFarcaster className="w-4 h-4 " />
-                {/* </a> */}
+              <Button asChild size="icon" variant="ghost">
+                <a href="https://warpcast.com/concernor.eth" target="_blank">
+                  <SiFarcaster className="w-4 h-4 " />
+                </a>
               </Button>
               <Button disabled size="icon" variant="ghost">
                 {/* <a href="https://docs.concernor.xyz" target="_blank"> */}

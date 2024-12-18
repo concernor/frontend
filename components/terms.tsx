@@ -11,7 +11,7 @@ export const TermsDialog = () => {
   return (
     <Dialog>
       <DialogTrigger className="hover:underline hover:cursor-pointer">
-        terms
+        <small>!</small>terms
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

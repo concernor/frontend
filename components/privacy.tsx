@@ -11,7 +11,7 @@ export const PrivacyDialog = () => {
   return (
     <Dialog>
       <DialogTrigger className="hover:underline hover:cursor-pointer">
-        privacy
+        <small>?</small>privacy
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

@@ -87,7 +87,7 @@ export default function Home() {
 
           <div className="w-full border border-gray-900 border-1 rounded-lg p-4">
             <Image
-              src="/concernoor-meme.jpeg"
+              src="https://pbs.twimg.com/media/GevxP31WIAAQDdv?format=png&name=medium"
               alt="meme"
               width={757}
               height={1013}
@@ -95,7 +95,7 @@ export default function Home() {
             <Separator className="my-2" />
             <div className="w-full flex flex-row justify-between items-center pt-2">
               <a
-                href="https://x.com/pythianism/status/1867696590301147210"
+                href="https://x.com/JimmyRagosa/status/1867851801652826546"
                 target="_blank"
                 className="text-xs text-gray-500 flex items-center ml-auto"
               >

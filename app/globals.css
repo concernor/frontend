@@ -69,4 +69,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .card {
+    @apply border border-gray-900 rounded-lg p-4;
+
+    border-width: 1px;
+  }
 }

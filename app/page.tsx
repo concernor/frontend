@@ -21,7 +21,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 // export const runtime = "edge";
-
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] px-4 sm:px-0">
@@ -32,10 +31,9 @@ export default function Home() {
           </div>
           <nav className="flex gap-2 items-center text-sm">
             <Link href="/">home</Link>
-            {/* <a href="https://docs.concernor.eth.limo" target="_blank">
+            <a href="https://concernor.github.io/docs" target="_blank">
               docs
-            </a> */}
-            <span className="line-through">docs</span>
+            </a>
 
             <Button size="sm" variant="ghost" className="" disabled>
               {/* <a href="/"> */}
@@ -111,7 +109,9 @@ export default function Home() {
               <span>.concernor</span>
             </div>
             <div className="flex gap-2 font-mono text-xs">
-              <div className="line-through">docs</div>
+              <a href="https://concernor.github.io/docs" target="_blank">
+                docs
+              </a>
             </div>
           </div>
           <Separator className="mt-1 mb-2 bg-gray-800" />
@@ -128,10 +128,10 @@ export default function Home() {
                   <SiFarcaster className="w-4 h-4 " />
                 </a>
               </Button>
-              <Button disabled size="icon" variant="ghost">
-                {/* <a href="https://docs.concernor.xyz" target="_blank"> */}
-                <SiDiscord className="w-4 h-4" />
-                {/* </a> */}
+              <Button asChild size="icon" variant="ghost">
+                <a href="https://discord.gg/JBdqYQqwZs" target="_blank">
+                  <SiDiscord className="w-4 h-4" />
+                </a>
               </Button>
               <Button asChild size="icon" variant="ghost">
                 <a href="https://github.com/concernor" target="_blank">
@@ -148,16 +148,6 @@ export default function Home() {
             </div>
           </div>
         </footer>
-        {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lore? || Disclosure || Roadmap || Terms || FAQ
-        </a>
-      </footer> */}
       </div>
     </div>
   );

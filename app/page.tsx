@@ -57,10 +57,10 @@ const Promises = () => (
     </div>
 
     <div className="w-full flex flex-row items-center justify-end  text-xs sm:text-sm gap-4">
-      <div className="card w-1/3 text-center">POC</div>
+      <div className="w-1/3 card ">Ticker is $CONCERN</div>
 
-      <div className="w-1/3 card border-gray-400 text-gray-400">
-        Ticker is $CONCERN
+      <div className="card w-1/3 text-center border-gray-400 text-gray-400">
+        POC
       </div>
 
       <div className="w-1/3   card border-gray-400 text-gray-400 ">

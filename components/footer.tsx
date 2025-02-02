@@ -1,11 +1,10 @@
-import { SiGithub } from "@icons-pack/react-simple-icons";
-import { SiDiscord, SiFarcaster, SiX } from "@icons-pack/react-simple-icons";
+import { SiFarcaster, SiGithub } from "@icons-pack/react-simple-icons";
+import { SiX } from "@icons-pack/react-simple-icons";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import { TermsDialog } from "./terms";
-import { PrivacyDialog } from "./privacy";
 import { Logo } from "./logo";
 import { Nav } from "./nav";
+import Link from "next/link";
 
 const Socials = () => (
   <div className="flex items-center">
@@ -20,11 +19,11 @@ const Socials = () => (
         <SiFarcaster className="w-4 h-4 " />
       </a>
     </Button>
-    <Button asChild size="icon" variant="ghost">
+    {/* <Button asChild size="icon" variant="ghost">
       <a href="https://discord.gg/JBdqYQqwZs" target="_blank">
         <SiDiscord className="w-4 h-4" />
       </a>
-    </Button>
+    </Button> */}
     <Button asChild size="icon" variant="ghost">
       <a href="https://github.com/concernor" target="_blank">
         <SiGithub className="w-4 h-4" />
@@ -35,9 +34,13 @@ const Socials = () => (
 
 const Links = () => (
   <div className="flex gap-2 font-mono text-xs">
-    <PrivacyDialog />
+    <Link href="/privacy">
+      <small>?</small>privacy
+    </Link>
     <Separator orientation="vertical" className="h-4" />
-    <TermsDialog />
+    <Link href="/terms">
+      <small>!</small>terms
+    </Link>
   </div>
 );
 

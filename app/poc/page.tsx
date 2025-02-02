@@ -1,34 +1,36 @@
-import { Button } from "@/components/ui/button";
-import { Hexagon, Share } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { Hexagon, Share } from "lucide-react";
 
-const concerns = [
-  "Decentralization",
-  "Trustlessness",
-  "Transparency",
-  "Security",
-  "Efficiency",
-  "Speed",
-  "Authenticity",
-  "Identity",
-  "Optimization",
-  "Ownership",
-  "Inclusion",
-  "Fairness",
-  "Provenance",
-  "Accountability",
-  "Automation",
-  "Verification",
-  "pneumonoultramicroscopicsilicovolcanoconiosis",
-  "Sustainability",
-  "Accessibility",
-  "Interoperability",
-];
+// const concerns = [
+//   "Decentralization",
+//   "Trustlessness",
+//   "Transparency",
+//   "Security",
+//   "Efficiency",
+//   "Speed",
+//   "Authenticity",
+//   "Identity",
+//   "Optimization",
+//   "Ownership",
+//   "Inclusion",
+//   "Fairness",
+//   "Provenance",
+//   "Accountability",
+//   "Automation",
+//   "Verification",
+//   "pneumonoultramicroscopicsilicovolcanoconiosis",
+//   "Sustainability",
+//   "Accessibility",
+//   "Interoperability",
+// ];
 
 export default function POC() {
   return (
-    <div className="w-full grid grid-cols-2 gap-4">
-      {/* <div className="card w-full">Create top level concern</div> */}
-      {concerns.map((concern, index) => (
+    <div className="w-full grid grid-cols-1 gap-4">
+      <div className="card w-full flex flex-col gap-8">
+        You are too early anon. We are still buidling...
+      </div>
+      {/* {concerns.map((concern, index) => (
         <div
           key={`concern-${index}`}
           className="card w-full flex flex-col gap-8"
@@ -51,7 +53,7 @@ export default function POC() {
             </Button>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }

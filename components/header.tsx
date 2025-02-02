@@ -1,8 +1,7 @@
-import { Dock } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
 import { Nav } from "./nav";
 import { Logo } from "./logo";
-import Link from "next/link";
 import { Separator } from "./ui/separator";
 
 const nav_links = [
@@ -28,14 +27,17 @@ export const Header = () => {
         <Button
           size="sm"
           variant="outline"
-          className="shadow-none"
-          // asChild
-          disabled
+          className="border-black shadow-none"
+          asChild
         >
-          <Link href="/poc" className="flex items-center gap-1">
-            POC
-            <Dock className="w-4 h-4 ml-1" />
-          </Link>
+          <a
+            href="https://flaunch.gg/base/coin/0x8F5A590Be0B27fEb5bFfaab82BBF31d3c7EFe222"
+            className="flex items-center gap-1"
+            target="__blank"
+          >
+            $CONCERN
+            <ExternalLink className="w-3 h-3 ml-1" />
+          </a>
         </Button>
       </div>
     </header>

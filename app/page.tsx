@@ -57,7 +57,13 @@ const Promises = () => (
     </div>
 
     <div className="w-full flex flex-row items-center justify-end  text-xs sm:text-sm gap-4">
-      <div className="w-1/3 card ">Ticker is $CONCERN</div>
+      <a
+        href="https://flaunch.gg/base/coin/0x8F5A590Be0B27fEb5bFfaab82BBF31d3c7EFe222"
+        className="w-1/3 card "
+        target="__blank"
+      >
+        Ticker is $CONCERN
+      </a>
 
       <div className="card w-1/3 text-center border-gray-400 text-gray-400">
         POC

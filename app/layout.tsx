@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Separator } from "@/components/ui/separator";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,11 +32,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="font-[family-name:var(--font-geist-sans)] px-4 sm:px-0">
-          <div className="max-w-xl mx-auto flex flex-col min-h-screen">
+          <div className="max-w-xl mx-auto flex flex-col min-h-screen gap-6">
             <Header />
-            <main className="flex flex-col items-start gap-6 py-8">
-              {children}
-            </main>
+            {/* <Separator className="bg-gray-700" /> */}
+            <main className="flex flex-col items-start gap-6">{children}</main>
+            <Separator className="" />
             <Footer />
           </div>
         </div>

@@ -62,6 +62,34 @@ body {
   }
 }
 
+.origins .react-tweet-theme {
+  @apply w-full max-w-none rounded-lg p-4;
+
+  --tweet-border: 1px solid #111827;
+  --tweet-font-family: var(--font-geist-sans);
+  --tweet-body-line-height: 0.875rem;
+  --tweet-body-font-size: 0.955rem;
+  --tweet-container-margin: 0;
+
+  article {
+    padding: 0;
+  }
+
+  button {
+    @apply rounded-lg;
+  }
+
+  * {
+    a {
+      border-radius: var(--radius);
+    }
+
+    svg {
+      @apply w-4 h-4;
+    }
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

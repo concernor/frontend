@@ -4,7 +4,6 @@ import { Heading } from "@/components/heading";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { coin, links } from "@/lib/consts";
-
 import { ExternalLink } from "lucide-react";
 
 const Status = () => (
@@ -77,8 +76,8 @@ const Status = () => (
 export default function Home() {
   return (
     <>
-      <Heading />
       <Status />
+      <Heading />
     </>
   );
 }

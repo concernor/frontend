@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { Toaster } from "@/components/ui/toaster";
+import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
+
 import "./globals.css";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { Separator } from "@/components/ui/separator";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,13 +33,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="font-[family-name:var(--font-geist-sans)] px-4 sm:px-0">
-          <div className="max-w-xl mx-auto flex flex-col min-h-screen gap-6">
+        <div className="flex flex-col items-center w-full min-h-screen">
+          <div className="max-w-7xl w-full flex flex-col items-center px-8">
             <Header />
-            {/* <Separator className="bg-gray-700" /> */}
-            <main className="flex flex-col items-start gap-6">{children}</main>
-            <Separator className="" />
+            <main className="flex flex-col gap-12 mt-8 md:mt-24">
+              {children}
+            </main>
             <Footer />
+
+            <Toaster />
+            <TailwindIndicator />
           </div>
         </div>
       </body>

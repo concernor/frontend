@@ -1,7 +1,9 @@
 export default function Privacy() {
   return (
-    <div className="card w-full text-sm prose">
-      <h1 className="text-lg">Privacy Policy</h1>
+    <div className="w-full flex flex-col gap-4 text-muted-foreground">
+      <h1 className="text-lg font-semibold uppercase text-white">
+        Privacy Policy
+      </h1>
       <p>
         We don&apos;t collect any data, and we have absolutely zero interest in
         changing that. Whether you&apos;re a bot or a human, where you&apos;re
@@ -12,7 +14,7 @@ export default function Privacy() {
       <p>
         Unlike{" "}
         <a
-          className="underline underline-offset-4"
+          className="underline underline-offset-4 text-white"
           href="https://x.com/scottshapiro/status/1863691538661883925"
           target="_blank"
         >

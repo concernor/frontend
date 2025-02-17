@@ -24,15 +24,15 @@ const Dump = () => (
           Read the Manifesto
           <ArrowRight className="w-4 h-4 ml-auto" />
         </Button>
-        <Button variant="outline" className="justify-start">
+        <Button variant="outline" className="justify-start" disabled>
           <LucideSwords className="w-4 h-4" />
           Checkout the Quests
           <ExternalLink className="w-4 h-4 ml-auto" />
         </Button>
-        <Button variant="outline" className="justify-start">
+        <Button variant="outline" className="justify-start" disabled>
           <CircleDotDashed className="w-4 h-4" />
           <span>
-            Spread your <b>$CONCERN</b>'s
+            Spread your <b>$CONCERN</b>&apos;s
           </span>
           <ArrowRight className="w-4 h-4 ml-auto" />
         </Button>

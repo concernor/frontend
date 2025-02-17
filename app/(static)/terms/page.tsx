@@ -1,7 +1,9 @@
 export default function Terms() {
   return (
-    <div className="card w-full text-sm prose">
-      <h1 className="text-lg">Terms of Service</h1>
+    <div className="w-full flex flex-col gap-4 text-muted-foreground">
+      <h1 className="font-semibold text-lg uppercase text-white">
+        Terms of Service
+      </h1>
       <p>
         Concernor is a personal hobby project, created purely for fun and
         experimentation. It&apos;s important to understand that this is a meme

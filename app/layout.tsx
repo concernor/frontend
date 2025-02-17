@@ -34,9 +34,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex flex-col items-center w-full min-h-screen">
-          <div className="max-w-7xl w-full flex flex-col items-center px-8">
+          <div className="max-w-7xl w-full flex flex-col items-center px-8 min-h-screen">
             <Header />
-            <main className="flex flex-col gap-12 mt-8 md:mt-24">
+            <main className="w-full flex flex-col gap-12 mt-8 md:mt-24 flex-grow">
               {children}
             </main>
             <Footer />

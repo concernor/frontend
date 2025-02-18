@@ -87,7 +87,7 @@ export const Footer = () => {
       <div className="w-full flex flex-col lg:flex-row border-2">
         <div className="w-full lg:w-1/2 grid grid-rows-3 divide-y-2">
           <div className="p-4 w-full flex justify-between items-center h-16">
-            <span className="uppercase font-bold pr-4 text-sm ">
+            <span className="uppercase font-bold pr-4 text-xs sm:text-sm ">
               don&apos;t worry anon
             </span>
             <PurchaseButton />

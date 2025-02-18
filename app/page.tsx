@@ -321,18 +321,25 @@ const transaction_support_sections = [
 
 const tokenomics_sections = [
   {
-    title: "Where can I view $CONCERN&apos;s tokenomics?",
+    title: "Where can I view $CONCERN's tokenomics?",
     content: (
       <div className="text-muted-foreground text-sm space-y-2">
         <p>
           Visit the <strong>Tokenomics</strong> section on the top of the
-          website or analyze the contract directly via <strong>Basescan</strong>
-          :{" "}
-          <code>
-            https://basescan.org/token/0x8f5a590be0b27feb5bffaab82bbf31d3c7efe222
-          </code>
+          website or analyze the contract directly via{" "}
+          <a
+            href="https://basescan.org/token/0x8f5a590be0b27feb5bffaab82bbf31d3c7efe222"
+            className="underline text-white"
+            target="_blank"
+          >
+            Basescan
+          </a>
           . You can also checkout{" "}
-          <a href="https://docs.flaunch.gg/" className="underline">
+          <a
+            href="https://docs.flaunch.gg/"
+            className="underline text-white"
+            target="_blank"
+          >
             flaunch docs
           </a>{" "}
           and checkout Fixed Price Fair launch, Auto buybacks, Devs get Revs and
@@ -350,7 +357,8 @@ const tokenomics_sections = [
             <strong>No Pre-Sale or Allocation</strong>: All tokens launched via{" "}
             <a
               href="https://docs.flaunch.gg/core-features/fixed-price-fair-launch"
-              className="underline"
+              className="underline text-white"
+              target="_blank"
             >
               Fixed Fair Price Launch
             </a>

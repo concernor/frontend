@@ -8,7 +8,7 @@ export const PurchaseButton = () => {
     <Button
       variant="outline"
       asChild
-      className="z-50 bg-black px-0 py-0 h-8 sm:h-9"
+      className="z-30 bg-black px-0 py-0 h-8 sm:h-9"
     >
       <Link href={links.flaunch} target="__blank">
         <span

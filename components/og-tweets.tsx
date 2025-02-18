@@ -1,16 +1,11 @@
-// import { links } from "@/lib/consts";
 import {
-  ArrowRight,
   Bookmark,
   ChartColumnIncreasing,
-  FlagTriangleRight,
   Heart,
   MessageSquare,
   Repeat,
 } from "lucide-react";
-import Link from "next/link";
 import { Button } from "./ui/button";
-import { links } from "@/lib/consts";
 
 export const InitialTweet = () => {
   return (

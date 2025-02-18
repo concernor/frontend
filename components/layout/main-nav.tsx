@@ -56,10 +56,10 @@ const Socials = () => {
 };
 
 const nav_links = [
-  {
-    label: "origins",
-    href: links.origins,
-  },
+  // {
+  //   label: "origins",
+  //   href: links.origins,
+  // },
   {
     label: "manifesto",
     href: links.manifesto,

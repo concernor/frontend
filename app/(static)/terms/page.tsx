@@ -15,8 +15,11 @@ export default function Terms() {
         various technologies I&apos;ve been interested in. There&apos;s no
         roadmap, no planned improvements, and no intention to make it useful or
         valuable. This project has <b>zero</b> monetary value, and you should
-        not believe anyone claiming otherwise. tldr; DO NOT BUY IT!
+        not believe anyone claiming otherwise. tldr;{" "}
+        <b className="underline">DO NOT BUY IT!</b> you will most likely lose
+        money.
       </p>
+
       <p>
         While I&apos;m open to hearing your concerns, feedback, and suggestions,
         please understand that I may or may not implement them based on my

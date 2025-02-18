@@ -50,10 +50,12 @@ const Socials = () => (
 );
 
 const Links = () => (
-  <div className="text-xs flex flex-col">
-    <Link href={links.origins}>origins</Link>
+  <div className="text-xs flex flex-col gap-1">
+    <Link target="__blank" href={links.origins}>
+      origins
+    </Link>
     <Link href={links.manifesto}>manifesto</Link>
-    <Link href={links.docs}>docs</Link>
+    {/* <Link href={links.docs}>docs</Link> */}
   </div>
 );
 
@@ -62,7 +64,7 @@ const Legal = () => (
     <Link href="/privacy" className="hover:underline hover:underline-offset-2">
       <small>?</small>privacy
     </Link>
-    <Separator orientation="vertical" className="h-4" />
+    <Separator orientation="vertical" className="h-4 border-white/80" />
     <Link href="/terms" className="hover:underline hover:underline-offset-2">
       <small>!</small>terms
     </Link>

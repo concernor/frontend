@@ -1,7 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
-
 export default function Manifesto() {
   return (
     <div className="w-full flex flex-col gap-4 text-muted-foreground uppercase text-sm">

@@ -8,7 +8,6 @@ export const coin = {
 
 // Static pages
 export const paths = {
-    origins: "/origins",
     manifesto: "/manifesto",
     terms: "/terms",
     privacy: "/privacy",
@@ -17,8 +16,10 @@ export const paths = {
 // All Links including static pages
 export const links = {
     ...paths,
+    origins: "https://docs.fileverse.io/0x32FbdEE2DDd79C800BD2f07C975C2b8559B13492/0#key=FofD53A6uPzGaDX9CR4rSa7STFx_o46IDF9OvVbrV0AKW2RAyXY66P89GEOJKuE8",
     docs: "https://concernor.github.io/docs",
-    flaunch: "https://flaunch.gg/base/coin/0x8F5A590Be0B27fEb5bFfaab82BBF31d3c7EFe222"
+    flaunch: "https://flaunch.gg/base/coin/0x8F5A590Be0B27fEb5bFfaab82BBF31d3c7EFe222",
+    quests: "#in-progress"
 }
 
 // Social accounts of concernor.

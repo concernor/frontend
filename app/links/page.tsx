@@ -1,13 +1,18 @@
 import { TickerIsConcern } from "@/components/landing/heading";
 import { Button } from "@/components/ui/button";
-import { socials } from "@/lib/consts";
+import { links, socials } from "@/lib/consts";
 import {
   SiFarcaster,
   SiTelegram,
   SiX,
   SiDiscord,
 } from "@icons-pack/react-simple-icons";
-import { ArrowRight, Globe } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Globe,
+  Link as LinkIcon,
+} from "lucide-react";
 import Link from "next/link";
 
 export default function Links() {
@@ -69,6 +74,17 @@ export default function Links() {
           </Link>
         </Button>
       </div>
+      <Button
+        variant="outline"
+        size="sm"
+        asChild
+        className="justify-start gap-2 font-mono border-border hover:border-white"
+      >
+        <Link href={links.web3bio} target="_blank">
+          <LinkIcon className="w-4 h-4" /> web3 bio
+          <ArrowUpRight className="w-4 h-4 ml-auto" />
+        </Link>
+      </Button>
     </div>
   );
 }

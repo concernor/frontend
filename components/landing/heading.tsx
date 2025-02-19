@@ -4,8 +4,8 @@ import { CoinAddress } from "@/components/coin-address";
 import { PurchaseButton } from "@/components/landing/purchase-button";
 import { TickerMarquee } from "@/components/landing/ticker-marquee";
 
-const TickerIsConcern = () => (
-  <div className="p-4 flex flex-col gap-2">
+export const TickerIsConcern = ({ className }: { className?: string }) => (
+  <div className={cn("p-4 flex flex-col gap-2", className)}>
     <TickerMarquee />
     <div className="flex justify-center py-2">
       <Image

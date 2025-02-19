@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
-import { SiDiscord, SiX } from "@icons-pack/react-simple-icons";
+import { SiX } from "@icons-pack/react-simple-icons";
 import { Separator } from "../ui/separator";
 
 interface NavProps {
@@ -42,24 +42,15 @@ const Socials = () => {
             <SiX className="w-3 h-3" />
           </Link>
         </Button>
-        <Button variant="ghost" size="icon" asChild>
-          <Link href={socials.discord} target="__blank">
-            <SiDiscord className="w-4 h-4" />
-          </Link>
-        </Button>
 
-        {/* <Button variant="outline">CONNECT</Button>
-          <Button variant="outline">EN</Button> */}
+        {/* <Button variant="outline">CONNECT</Button> */}
+        {/* <Button variant="outline">EN</Button> */}
       </div>
     </div>
   );
 };
 
 const nav_links = [
-  // {
-  //   label: "origins",
-  //   href: links.origins,
-  // },
   {
     label: "manifesto",
     href: links.manifesto,

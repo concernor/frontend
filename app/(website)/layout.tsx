@@ -14,7 +14,6 @@ export default function StaticLayout({
         {children}
       </main>
       <Footer />
-
       <Toaster />
     </div>
   );

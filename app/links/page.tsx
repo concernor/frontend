@@ -6,6 +6,7 @@ import {
   SiTelegram,
   SiX,
   SiDiscord,
+  SiGithub,
 } from "@icons-pack/react-simple-icons";
 import {
   ArrowRight,
@@ -59,6 +60,16 @@ export default function Links() {
         >
           <Link href={socials.discord} target="_blank">
             <SiDiscord className="w-4 h-4" />
+          </Link>
+        </Button>
+        <Button
+          variant="outline"
+          size="icon"
+          className="border-border hover:border-white"
+          asChild
+        >
+          <Link href={socials.github} target="_blank">
+            <SiGithub className="w-4 h-4" />
           </Link>
         </Button>
         <Button

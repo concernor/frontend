@@ -241,138 +241,89 @@ import {
 //   },
 // ];
 
-const wallet_security_sections = [
-  {
-    title: "Which wallets support $CONCERN?",
-    content: (
-      <div className="text-muted-foreground text-sm space-y-2">
-        <p>
-          All EVM-compatible wallets with Base Network configuration, to name a
-          few:
-        </p>
-        <ul className="list-disc pl-4">
-          <li>
-            <strong>Rabby Wallet</strong>
-          </li>
-          <li>
-            <strong>MetaMask</strong>
-          </li>
-          <li>
-            <strong>Trust Wallet</strong>
-          </li>
-          <li>
-            <strong>Coinbase Wallet</strong>
-          </li>
-          <li>
-            <strong>Ledger</strong> (via MetaMask integration)
-          </li>
-          <li>
-            <strong>Trezor</strong> (via MetaMask integration)
-          </li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    title: "I sent $CONCERN to the wrong address. Can I recover it?",
-    content: (
-      <div className="text-muted-foreground text-sm space-y-2">
-        <p>
-          Blockchain transactions are irreversible. Always triple-check
-          addresses before confirming.
-        </p>
-        <p>
-          But there is a good side your failure to verify the address, you can
-          now say goodbye to your $CONCERN&apos;s.
-        </p>
-      </div>
-    ),
-  },
-];
+// const transaction_support_sections = [
+//   {
+//     title: "Why isn't my swap completing?",
+//     content: (
+//       <div className="text-muted-foreground text-sm space-y-2">
+//         <p>Common fixes:</p>
+//         <ol className="list-decimal pl-4">
+//           <li>
+//             <strong>Increase slippage</strong> to 5-7% in DEX settings.
+//           </li>
+//           <li>Ensure sufficient ETH for gas (minimum 0.01 ETH recommended).</li>
+//           <li>Clear browser cache or try a different RPC endpoint.</li>
+//         </ol>
+//       </div>
+//     ),
+//   },
+//   {
+//     title: "How long do transactions take on Base?",
+//     content: (
+//       <div className="text-muted-foreground text-sm">
+//         <p>
+//           Base Network processes blocks in <strong>2 seconds</strong>, with
+//           swaps typically confirming within <strong>15-30 seconds</strong>.
+//         </p>
+//       </div>
+//     ),
+//   },
+// ];
 
-const transaction_support_sections = [
-  {
-    title: "Why isn't my swap completing?",
-    content: (
-      <div className="text-muted-foreground text-sm space-y-2">
-        <p>Common fixes:</p>
-        <ol className="list-decimal pl-4">
-          <li>
-            <strong>Increase slippage</strong> to 5-7% in DEX settings.
-          </li>
-          <li>Ensure sufficient ETH for gas (minimum 0.01 ETH recommended).</li>
-          <li>Clear browser cache or try a different RPC endpoint.</li>
-        </ol>
-      </div>
-    ),
-  },
-  {
-    title: "How long do transactions take on Base?",
-    content: (
-      <div className="text-muted-foreground text-sm">
-        <p>
-          Base Network processes blocks in <strong>2 seconds</strong>, with
-          swaps typically confirming within <strong>15-30 seconds</strong>.
-        </p>
-      </div>
-    ),
-  },
-];
-
-const tokenomics_sections = [
-  {
-    title: "Where can I view $CONCERN's tokenomics?",
-    content: (
-      <div className="text-muted-foreground text-sm space-y-2">
-        <p>
-          Visit the <strong>Tokenomics</strong> section on the top of the
-          website or analyze the contract directly via{" "}
-          <a
-            href="https://basescan.org/token/0x8f5a590be0b27feb5bffaab82bbf31d3c7efe222"
-            className="underline text-white"
-            target="_blank"
-          >
-            Basescan
-          </a>
-          . You can also checkout{" "}
-          <a
-            href="https://docs.flaunch.gg/"
-            className="underline text-white"
-            target="_blank"
-          >
-            flaunch docs
-          </a>{" "}
-          and checkout Fixed Price Fair launch, Auto buybacks, Devs get Revs and
-          memestream sections to get more information.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "How does $CONCERN ensure fair distribution?",
-    content: (
-      <div className="text-muted-foreground text-sm space-y-2">
-        <ul className="list-disc pl-4">
-          <li>
-            <strong>No Pre-Sale or Allocation</strong>: All tokens launched via{" "}
-            <a
-              href="https://docs.flaunch.gg/core-features/fixed-price-fair-launch"
-              className="underline text-white"
-              target="_blank"
-            >
-              Fixed Fair Price Launch
-            </a>
-            .
-          </li>
-          <li>
-            All the $CONCERN&apos;s team holds is bought the same way everyone
-            else does. Free market baby.
-          </li>
-        </ul>
-      </div>
-    ),
-  },
-];
+// const tokenomics_sections = [
+// {
+//   title: "Where can I view $CONCERN's tokenomics?",
+//   content: (
+//     <div className="text-muted-foreground text-sm space-y-2">
+//       <p>
+//         Visit the <strong>Tokenomics</strong> section on the top of the
+//         website or analyze the contract directly via{" "}
+//         <a
+//           href="https://basescan.org/token/0x8f5a590be0b27feb5bffaab82bbf31d3c7efe222"
+//           className="underline text-white"
+//           target="_blank"
+//         >
+//           Basescan
+//         </a>
+//         . You can also checkout{" "}
+//         <a
+//           href="https://docs.flaunch.gg/"
+//           className="underline text-white"
+//           target="_blank"
+//         >
+//           flaunch docs
+//         </a>{" "}
+//         and checkout Fixed Price Fair launch, Auto buybacks, Devs get Revs and
+//         memestream sections to get more information.
+//       </p>
+//     </div>
+//   ),
+// },
+// {
+//   title: "How does $CONCERN ensure fair distribution?",
+//   content: (
+//     <div className="text-muted-foreground text-sm space-y-2">
+//       <ul className="list-disc pl-4">
+//         <li>
+//           <strong>No Pre-Sale or Allocation</strong>: All tokens launched via{" "}
+//           <a
+//             href="https://docs.flaunch.gg/core-features/fixed-price-fair-launch"
+//             className="underline text-white"
+//             target="_blank"
+//           >
+//             Fixed Fair Price Launch
+//           </a>
+//           .
+//         </li>
+//         <li>
+//           All the $CONCERN&apos;s team holds is bought the same way everyone
+//           else does. Free market baby.
+//         </li>
+//       </ul>
+//     </div>
+//   ),
+// },
+// ];
 
 // const regulatory_sections = [
 //   {
@@ -609,16 +560,59 @@ const tokenomics_sections = [
 //   },
 // ];
 
-const general_info_sections = [
+const faqs = [
   {
     title: "What is $CONCERN?",
     content: (
-      <div className="text-muted-foreground text-sm">
+      <div className="text-muted-foreground text-sm space-y-2">
         <p>
-          $CONCERN is a community-driven meme token operating on the Base
-          blockchain, combining viral appeal with decentralized governance
-          features. Unlike traditional cryptocurrencies, it emphasizes cultural
-          engagement through memes and social interaction.
+          <b>$CONCERN</b> is a community-driven{" "}
+          <strong>ERC20 meme token</strong> operating on the Base blockchain,
+          launched through{" "}
+          <a
+            href="https://flaunch.gg/base/coin/0x8F5A590Be0B27fEb5bFfaab82BBF31d3c7EFe222"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-white"
+          >
+            flaunch
+          </a>
+          . With a focus on cultural engagement through memes and social
+          interaction, <b>$CONCERN</b> aims to build a vibrant community where
+          users can connect and share in the fun of meme culture on Base and
+          experiment with the new economics flaunch provides.
+        </p>
+        <p>
+          To learn more about the <strong>Tokenomics</strong> you can checkout
+          the contract directly on{" "}
+          <a
+            href="https://basescan.org/token/0x8f5a590be0b27feb5bffaab82bbf31d3c7efe222"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-white"
+          >
+            basescan
+          </a>
+          . You can also explore our{" "}
+          <a
+            href="https://docs.flaunch.gg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-white"
+          >
+            flaunch docs
+          </a>{" "}
+          and read about <strong>Fixed Price Fair Launch</strong>,
+          <strong>Auto Buybacks</strong>, <strong>Dev Revenue</strong>, and the{" "}
+          <strong>Memestream</strong> approach for further information on how
+          $CONCERN operates.
+        </p>
+        <p>
+          Please note that, although <b>$CONCERN</b> is community-driven, it
+          currently does not include any governance features so it is literally
+          a valueless token. We encourage everyone to conduct their own research
+          (DYOR) before engaging with <b>$CONCERN</b> or any other
+          cryptocurrency.
         </p>
       </div>
     ),
@@ -628,26 +622,62 @@ const general_info_sections = [
     content: (
       <div className="text-muted-foreground text-sm space-y-2">
         <p>
-          $CONCERN is a fully transparent project launched through flaunch.gg.
-          that doesn&apos;t prevent it from being a scam though.
+          <b>$CONCERN</b> is a fully transparent project launched through{" "}
+          <a
+            href="https://flaunch.gg/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            flaunch.gg
+          </a>
+          . But remember: transparency alone doesn&apos;t guarantee it&apos;s
+          not a scam.
         </p>
-        <p>So yes it can be.</p>
+        <p>
+          Could <b>$CONCERN</b> be a scam? In theory, yes. In crypto, you never
+          truly know.
+        </p>
         <ul className="list-disc pl-4 space-y-1">
-          <li>Are you sure you are on the right website?</li>
-          <li>Do you know what dev is thinking?</li>
-          <li>Do you know what the community is thinking?</li>
-          <li>Do you know what the market is thinking?</li>
-          <li>Do you know what the future is thinking?</li>
-          <li>Do you know what the past is thinking?</li>
-          <li>Do you know what the present is thinking?</li>
+          <li>
+            Are you sure you&apos;re on the real website and not a phony copy?
+          </li>
+          <li>Are you certain the dev isn&apos;t plotting a rug pull?</li>
+          <li>
+            Do you know for a fact the community won&apos;t vanish tomorrow?
+          </li>
+          <li>Do you trust the market to be rational?</li>
+          <li>Do you know what the future will bring?</li>
+          <li>What about the past? Has anything been overlooked?</li>
+          <li>And how can you be certain about the present?</li>
         </ul>
         <p className="mt-2">
-          There are many things that you don&apos;t know and need to be
-          concerned about. Therefore always DYOR and never trust anyone trying
-          to sell you something. Remember meme coins are not investments. You
-          losing all your money is more likely than you being rich.
+          The truth is, there are countless unknowns, and the crypto space isn’t
+          a friendly, guaranteed return environment — especially for meme
+          tokens. You’re more likely to lose your money than become the next
+          millionaire. Always question everything, never trust anyone blindly,
+          and do your own research (DYOR).
         </p>
         <p className="font-bold mt-2">Stay Concerned.</p>
+      </div>
+    ),
+  },
+  {
+    title: "I sent $CONCERN to the wrong address. Can I recover it?",
+    content: (
+      <div className="text-muted-foreground text-sm space-y-2">
+        <p>
+          Once a blockchain transaction is confirmed, it&apos;s final.
+          There&apos;s no magical &quot;undo&quot; button or cosmic help desk to
+          salvage your tokens from the depths of the blockchain. If you&apos;ve
+          sent your <b>$CONCERN</b> to the wrong address, you can go ahead and
+          start saying goodbye to your concerns —because they are gone.
+        </p>
+        <p>
+          Look on the bright side: you no longer have to worry about anyone
+          scamming you out of those particular tokens. Let this be a valuable
+          lesson: always triple-check the address before you click send, or risk
+          paying the &quot;learning tax&quot; in the form of lost tokens.
+        </p>
       </div>
     ),
   },
@@ -655,18 +685,39 @@ const general_info_sections = [
 
 const FAQs = () => (
   <div className="w-full lg:w-2/3 flex flex-col">
-    <p>Concernoors united</p>
+    <div className="flex flex-col gap-4">
+      <h1 className="font-semibold text-white">
+        The Concernor Commission (The CC)
+      </h1>
+      <p className="text-muted-foreground">
+        Welcome to the official domain of The Concernor Commission—a playful nod
+        to the SEC, but for anxieties. We are here to shine a spotlight on
+        crypto&apos;s hidden motives, questionable shilling tactics, and all
+        those nagging concerns that keep you awake at night. By blending humor
+        with healthy skepticism, The CC serves as a memetically-charged
+        “regulatory” body for all things <b>$CONCERN</b>.
+      </p>
 
-    <h1 className="text-xl font-bold mb-4">Frequently Asked Questions (FAQ)</h1>
+      {/* <blockquote className="text-muted-foreground border-l-2 border-muted-foreground/40 pl-4 italic">
+        &quot;In a world where hype reigns supreme, a little <em>concern</em>{" "}
+        might be the real alpha.&quot;
+        <footer className="mt-2 text-sm">— Chair of Concern</footer>
+      </blockquote> */}
+
+      <h2 className="font-semibold text-white mt-2">
+        Frequently Asked Questions (FAQ)
+      </h2>
+      <p className="text-muted-foreground mb-2">
+        Got questions? Great. Keep digging, never take things at face value and
+        stay concerned.
+      </p>
+    </div>
     <Accordion type="single" collapsible>
-      {[
-        ...general_info_sections,
-        ...tokenomics_sections,
-        ...wallet_security_sections,
-        ...transaction_support_sections,
-      ].map(({ title, content }, key) => (
+      {faqs.map(({ title, content }, key) => (
         <AccordionItem key={key} value={title}>
-          <AccordionTrigger>{title}</AccordionTrigger>
+          <AccordionTrigger className="text-white font-semibold">
+            {title}
+          </AccordionTrigger>
           <AccordionContent>{content}</AccordionContent>
         </AccordionItem>
       ))}

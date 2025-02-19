@@ -84,7 +84,7 @@ const NFTRelease = () => (
     )}
   >
     <h3 className="uppercase font-mono text-sm text-muted-foreground">
-      NFT in progress
+      DAO in progress
     </h3>
     <span className="loader w-[120px]"></span>
   </div>

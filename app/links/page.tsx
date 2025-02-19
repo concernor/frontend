@@ -17,7 +17,7 @@ import Link from "next/link";
 
 export default function Links() {
   return (
-    <div className="max-w-sm flex flex-col gap-4 text-muted-foreground mx-auto mt-24">
+    <div className="w-full max-w-md flex flex-col gap-4 text-muted-foreground mx-auto mt-24 px-4 md:px-8">
       <TickerIsConcern className="border" />
 
       <div className="flex gap-2">

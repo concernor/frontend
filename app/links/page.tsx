@@ -52,16 +52,16 @@ export default function Links() {
             <SiTelegram className="w-4 h-4" />
           </Link>
         </Button>
-        <Button
+        {/* <Button
           variant="outline"
           size="icon"
           className="border-border hover:border-white"
-          asChild
+          disabled
         >
           <Link href={socials.discord} target="_blank">
             <SiDiscord className="w-4 h-4" />
           </Link>
-        </Button>
+        </Button> */}
         <Button
           variant="outline"
           size="icon"

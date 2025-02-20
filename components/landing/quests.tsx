@@ -24,6 +24,7 @@ const quests = [
     link: socials.discord,
     description: "join the community and get a role",
     external: true,
+    disabled: true,
   },
   {
     icon: <LucideSwords className="w-4 h-4" />,

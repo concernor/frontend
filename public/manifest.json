@@ -1,0 +1,16 @@
+{
+  "name": "Concernor",
+  "short_name": "Concernor",
+  "description": "In a world where hype reigns supreme, a little concern might be the real alpha.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/static/concernor.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ]
+}

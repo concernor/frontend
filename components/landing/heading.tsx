@@ -11,7 +11,7 @@ export const TickerIsConcern = ({ className }: { className?: string }) => (
       <Image
         width={120}
         height={120}
-        src="/static/concernor-head.png"
+        src="/static/concernor.png"
         alt="concernor mascot"
         className="grow-0"
       />
@@ -76,7 +76,7 @@ const Tokenomics = () => (
   </div>
 );
 
-const NFTRelease = () => (
+const DAORelease = () => (
   <div
     className={cn(
       "p-4 flex flex-col items-center justify-center gap-2",
@@ -84,7 +84,7 @@ const NFTRelease = () => (
     )}
   >
     <h3 className="uppercase font-mono text-sm text-muted-foreground">
-      DAO in progress
+      initiating DAO
     </h3>
     <span className="loader w-[120px]"></span>
   </div>
@@ -95,7 +95,7 @@ export const Heading = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x-2 border-2">
       <TickerIsConcern />
       <Tokenomics />
-      <NFTRelease />
+      <DAORelease />
     </div>
   );
 };

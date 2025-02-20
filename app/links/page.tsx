@@ -5,7 +5,7 @@ import {
   SiFarcaster,
   SiTelegram,
   SiX,
-  SiDiscord,
+  // SiDiscord,
   SiGithub,
 } from "@icons-pack/react-simple-icons";
 import {

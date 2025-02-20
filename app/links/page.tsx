@@ -1,6 +1,6 @@
 import { TickerIsConcern } from "@/components/landing/heading";
 import { Button } from "@/components/ui/button";
-import { links, socials } from "@/lib/consts";
+import { socials } from "@/lib/consts";
 import {
   SiFarcaster,
   SiTelegram,
@@ -10,9 +10,9 @@ import {
 } from "@icons-pack/react-simple-icons";
 import {
   ArrowRight,
-  ArrowUpRight,
+  // ArrowUpRight,
   Globe,
-  Link as LinkIcon,
+  // Link as LinkIcon,
 } from "lucide-react";
 import Link from "next/link";
 

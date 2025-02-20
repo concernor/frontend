@@ -33,14 +33,14 @@ export default function Manifesto() {
       <p className="text-white">Worry is wisdom; let it guide, not paralyze.</p>
       <p>Fail, learn, do it again.</p>
       <p>
-        We cant change everything, but{" "}
+        We can&apos;t change everything, but{" "}
         <span className="text-white">we change what we can.</span>
       </p>
       <p className="text-white">
         Evolution is optional. Survival is not mandatory.
       </p>
       <p>Trust is earned by action.</p>
-      <p>Keep everyone accountable.</p>
+      <p>Keep people accountable.</p>
       <p>
         Negotiate without mercy —{" "}
         <span className="text-white">if you smell BS, call it out</span>{" "}

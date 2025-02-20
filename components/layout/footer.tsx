@@ -29,13 +29,16 @@ const Socials = () => (
     >
       <SiFarcaster className="w-4 h-4" /> Farcaster
     </Link>
-    <Link
-      href={socials.discord}
-      target="__blank"
-      className={cn(social_link, "ml-[-2px] lg:ml-0")}
+    <span
+      // href={socials.discord}
+      // target="__blank"
+      className={cn(
+        social_link,
+        "ml-[-2px] lg:ml-0 text-muted-foreground hover:bg-background"
+      )}
     >
-      <SiDiscord className="w-4 h-4" /> Discord
-    </Link>
+      <SiDiscord className="w-4 h-4" /> Discord (soon)
+    </span>
     <Link href={socials.telegram} target="__blank" className={social_link}>
       <SiTelegram className="w-4 h-4" /> Telegram
     </Link>

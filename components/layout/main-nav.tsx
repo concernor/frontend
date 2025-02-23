@@ -1,7 +1,7 @@
 import { links, socials } from "@/lib/consts";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Sparkle } from "lucide-react";
 import Link from "next/link";
 import { SiFarcaster, SiX } from "@icons-pack/react-simple-icons";
 import { Separator } from "../ui/separator";
@@ -36,12 +36,19 @@ const Nav = ({ links, className }: NavProps) => {
 const Socials = () => {
   return (
     <div className="flex gap-2">
-      <div className="flex">
+      <div className="flex items-center">
         <Button variant="ghost" size="icon" asChild>
           <Link href={socials.farcaster} target="_blank">
             <SiFarcaster className="w-4 h-4" />
           </Link>
         </Button>
+
+        <Button variant="ghost" size="icon" asChild>
+          <Link href={socials.zora} target="_blank">
+            <Sparkle className="w-4 h-4" />
+          </Link>
+        </Button>
+        <Separator orientation="vertical" className="h-4 mx-1" />
         <Button variant="ghost" size="icon" asChild>
           <Link href={socials.x} target="_blank">
             <SiX className="w-3 h-3" />
@@ -75,7 +82,8 @@ export const MainNav = ({ hideButtons }: MainNavProps) => {
 
       {!hideButtons && (
         <>
-          <Separator orientation="vertical" className="ml-2 h-4" />
+          {/* <Separator orientation="vertical" className="ml-2 h-4" /> */}
+          <span className="text-muted-foreground mx-2">-</span>
           <Socials />
         </>
       )}

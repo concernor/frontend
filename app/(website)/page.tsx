@@ -7,7 +7,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
+import Link from "next/link";
+import { links, socials } from "@/lib/consts";
+import { Separator } from "@/components/ui/separator";
 // Possible Branding for the DAO.
 // The Concernor Commission
 // Welcome to the official domain of The Concernor Commission—a playful nod
@@ -184,6 +186,27 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row gap-8">
         <Quests />
         <FAQs />
+      </div>
+      <div className="flex flex-col gap-4">
+        <Separator />
+        <h2 className="text-white font-semibold  mb-6 font-mono">[assets]</h2>
+
+        <div className="flex">
+          <Link
+            href={socials.zora}
+            target="_blank"
+            className="w-32 aspect-square flex items-center justify-center font-mono hover:bg-muted-foreground/10 transition-colors border border-dashed border-white/60"
+          >
+            <p className="text-sm">/memes</p>
+          </Link>
+          <Link
+            href={links.branding}
+            target="_blank"
+            className="w-32 aspect-square flex items-center justify-center font-mono hover:bg-muted-foreground/10 transition-colors border border-dashed border-white/60 border-l-0 "
+          >
+            <p className="text-sm">/branding</p>
+          </Link>
+        </div>
       </div>
       <div className="bg-dotted w-full h-12" />
     </>

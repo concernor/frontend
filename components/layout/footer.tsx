@@ -1,5 +1,4 @@
 import {
-  SiDiscord,
   SiFarcaster,
   SiGithub,
   SiTelegram,
@@ -10,11 +9,12 @@ import Link from "next/link";
 import { links, socials } from "@/lib/consts";
 import { cn } from "@/lib/utils";
 import { PurchaseButton } from "@/components/landing/purchase-button";
+import { Rss, Sparkle } from "lucide-react";
 const Socials = () => (
   <>
     <Link
       href={socials.x}
-      target="__blank"
+      target="_blank"
       className={cn(
         social_link,
         "border-t-2 mt-[-2px] lg:mt-0 lg:border-t-0 lg:border-l-2"
@@ -24,37 +24,41 @@ const Socials = () => (
     </Link>
     <Link
       href={socials.farcaster}
-      target="__blank"
+      target="_blank"
       className={cn(social_link, "mt-[-2px] hover:border-b-2")}
     >
       <SiFarcaster className="w-4 h-4" /> Farcaster
     </Link>
-    <span
-      // href={socials.discord}
-      // target="__blank"
-      className={cn(
-        social_link,
-        "ml-[-2px] lg:ml-0 text-muted-foreground hover:bg-background"
-      )}
+    <Link
+      href={socials.zora}
+      target="_blank"
+      className={cn(social_link, "ml-[-2px] lg:ml-0")}
     >
-      <SiDiscord className="w-4 h-4" /> Discord (soon)
-    </span>
+      <Sparkle className="w-4 h-4" /> Zora
+    </Link>
     <Link href={socials.telegram} target="__blank" className={social_link}>
       <SiTelegram className="w-4 h-4" /> Telegram
     </Link>
     <Link
       href={socials.github}
-      target="__blank"
+      target="_blank"
       className={cn(social_link, "ml-[-2px] lg:ml-0")}
     >
       <SiGithub className="w-4 h-4" /> Github
+    </Link>
+    <Link
+      href={socials.paragraph}
+      target="_blank"
+      className={cn(social_link, "")}
+    >
+      <Rss className="w-4 h-4" /> Paragraph
     </Link>
   </>
 );
 
 const Links = () => (
   <div className="text-xs flex flex-col gap-1">
-    <Link target="__blank" href={links.origins}>
+    <Link target="_blank" href={links.origins}>
       origins
     </Link>
     <Link href={links.manifesto}>manifesto</Link>
@@ -102,7 +106,6 @@ export const Footer = () => {
         </div>
         <div className="w-full lg:w-1/2 grid grid-rows-3 grid-cols-2 text-sm divide-y-2 divide-x-2">
           <Socials />
-          <div className=""></div>
         </div>
       </div>
       <Disclaimer />

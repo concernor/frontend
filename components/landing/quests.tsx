@@ -5,7 +5,7 @@ import {
   LucideSwords,
   ArrowRight,
 } from "lucide-react";
-import { SiDiscord } from "@icons-pack/react-simple-icons";
+import { SiFarcaster } from "@icons-pack/react-simple-icons";
 
 import { links, socials } from "@/lib/consts";
 import { Button } from "@/components/ui/button";
@@ -19,12 +19,11 @@ const quests = [
     description: "learn concernors stands for",
   },
   {
-    icon: <SiDiscord className="w-4 h-4" />,
-    title: "join the community",
-    link: socials.discord,
+    icon: <SiFarcaster className="w-4 h-4" />,
+    title: "join the /concernors",
+    link: "https://warpcast.com/~/channel/concernors",
     description: "join the community and get a role",
     external: true,
-    disabled: true,
   },
   {
     icon: <LucideSwords className="w-4 h-4" />,

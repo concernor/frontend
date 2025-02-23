@@ -9,9 +9,9 @@ export const TickerIsConcern = ({ className }: { className?: string }) => (
     <TickerMarquee />
     <div className="flex justify-center py-2">
       <Image
-        width={120}
-        height={120}
-        src="/static/concernor.png"
+        width={80}
+        height={80}
+        src="/static/concernor.svg"
         alt="concernor mascot"
         className="grow-0"
       />

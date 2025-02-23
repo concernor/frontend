@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Concernor",
     images: [
       {
-        url: "/static/concernor.png",
+        url: "/static/concernor.svg",
         width: 120,
         height: 120,
         alt: "Concernor Logo",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description:
       "In a world where hype reigns supreme, a little concern might be the real alpha.",
     creator: "@concernor",
-    images: ["/static/concernor.png"],
+    images: ["/static/concernor.svg"],
   },
   robots: {
     index: true,
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/static/concernor.png",
+    apple: "/static/concernor.svg",
   },
   manifest: "/manifest.json",
   alternates: {

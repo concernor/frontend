@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
-import { SiX } from "@icons-pack/react-simple-icons";
+import { SiFarcaster, SiX } from "@icons-pack/react-simple-icons";
 import { Separator } from "../ui/separator";
 
 interface NavProps {
@@ -38,13 +38,15 @@ const Socials = () => {
     <div className="flex gap-2">
       <div className="flex">
         <Button variant="ghost" size="icon" asChild>
-          <Link href={socials.x} target="__blank">
+          <Link href={socials.farcaster} target="_blank">
+            <SiFarcaster className="w-4 h-4" />
+          </Link>
+        </Button>
+        <Button variant="ghost" size="icon" asChild>
+          <Link href={socials.x} target="_blank">
             <SiX className="w-3 h-3" />
           </Link>
         </Button>
-
-        {/* <Button variant="outline">CONNECT</Button> */}
-        {/* <Button variant="outline">EN</Button> */}
       </div>
     </div>
   );

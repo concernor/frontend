@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { SiFarcaster } from "@icons-pack/react-simple-icons";
 
-import { links, socials } from "@/lib/consts";
+import { links } from "@/lib/consts";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -63,12 +63,12 @@ export const Origins = () => {
     <Link
       href={links.origins}
       target="_blank"
-      className="w-full flex flex-col justify-start"
+      className="w-full flex flex-col justify-start  hover:bg-accent transition-colors hover:text-accent-foreground group"
     >
       <Button
         variant="outline"
         size="sm"
-        className="justify-start font-mono hover:bg-background"
+        className="justify-start font-mono hover:bg-background group-hover:bg-accent group-hover:text-accent-foreground transition-colors"
       >
         <FlagTriangleRight className="w-3 h-3" />
         learn the origins

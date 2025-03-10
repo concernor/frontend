@@ -17,7 +17,12 @@ interface NavProps {
 
 const Nav = ({ links, className }: NavProps) => {
   return (
-    <nav className={cn("ml-auto flex gap-2 uppercase text-xs", className)}>
+    <nav
+      className={cn(
+        "mr-auto sm:mr-0 sm:ml-auto flex gap-4 uppercase text-xs",
+        className
+      )}
+    >
       {links.map((link, key) => (
         <Link
           key={key}
@@ -64,6 +69,10 @@ const nav_links = [
     label: "manifesto",
     href: links.manifesto,
   },
+  {
+    label: "experiments",
+    href: links.experiments,
+  },
   // {
   //   label: "02 docs",
   //   href: links.docs,
@@ -77,16 +86,15 @@ interface MainNavProps {
 
 export const MainNav = ({ hideButtons }: MainNavProps) => {
   return (
-    <>
+    <div className="flex">
       <Nav links={nav_links} />
 
       {!hideButtons && (
         <>
-          {/* <Separator orientation="vertical" className="ml-2 h-4" /> */}
-          <span className="text-muted-foreground mx-2">-</span>
+          <span className="hidden sm:block text-muted-foreground mx-2">-</span>
           <Socials />
         </>
       )}
-    </>
+    </div>
   );
 };

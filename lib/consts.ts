@@ -8,6 +8,7 @@ export const coin = {
 
 // Static pages
 export const paths = {
+    experiments: "/experiments",
     manifesto: "/manifesto",
     terms: "/terms",
     privacy: "/privacy",

@@ -193,9 +193,15 @@ export default function Home() {
 
         <div className="flex">
           <Link
+            href={links.experiments}
+            className="w-32 aspect-square flex items-center justify-center font-mono hover:bg-muted-foreground/10 transition-colors border border-dashed border-white/60"
+          >
+            <p className="text-sm">/experiments</p>
+          </Link>
+          <Link
             href={socials.zora}
             target="_blank"
-            className="w-32 aspect-square flex items-center justify-center font-mono hover:bg-muted-foreground/10 transition-colors border border-dashed border-white/60"
+            className="w-32 aspect-square flex items-center justify-center font-mono hover:bg-muted-foreground/10 transition-colors border border-dashed border-white/60 border-l-0 "
           >
             <p className="text-sm">/memes</p>
           </Link>

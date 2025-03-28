@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   LucideSwords,
   ArrowRight,
+  MessageCircleQuestion,
 } from "lucide-react";
 import { SiFarcaster } from "@icons-pack/react-simple-icons";
 
@@ -23,6 +24,14 @@ const quests = [
     title: "join the /concernors",
     link: "https://warpcast.com/~/channel/concernors",
     description: "join the community and get a role",
+    external: true,
+  },
+
+  {
+    icon: <MessageCircleQuestion className="w-4 h-4" />,
+    title: "cast anonymously",
+    link: links.anoncast,
+    description: "cast your concerns anonymously",
     external: true,
   },
   {

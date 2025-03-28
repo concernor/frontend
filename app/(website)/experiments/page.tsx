@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const pools = {
   "ETH/CONCERN":
-    "https://app.uniswap.org/explore/pools/base/0x21e0cce154e0e737b4076f27e479699cbfff653348d064c98c30bcb75dccb167",
+    "https://app.uniswap.org/explore/pools/base/0xDeFa4d179D108115e11b5152f280d4fA3B3E3D7D",
   "FLNCHY/CONCERN":
     "https://app.uniswap.org/explore/pools/base/0xaeFfEAa004ad149DeF5B8BaAB4118d37FfB89361",
 };
@@ -55,40 +55,31 @@ export default function Manifesto() {
           <div className="border border-dashed border-white flex flex-col gap-2 p-4">
             <div className="flex justify-between">
               <h3 className="uppercase text-white flex flex-col gap-1">
-                ETH/CONCERN
+                WETH/CONCERN
                 <span className="text-xs text-muted-foreground">
-                  (1.3% fee per trade)
+                  (1% fee per trade)
                 </span>
               </h3>
 
               <Button variant="outline" size="sm" asChild>
                 <Link href={pools["ETH/CONCERN"]} target="_blank">
-                  Uniswap V4 pool <ArrowUpRight className="w-3 h-3" />
+                  Uniswap V3 pool <ArrowUpRight className="w-3 h-3" />
                 </Link>
               </Button>
             </div>
             <p className="text-sm">
               This pool provides an alternative to the flETH/CONCERN pool for
-              trading $CONCERN. It features a 0.3% fee that goes directly to LP
-              providers, plus implements the{" "}
-              <a
-                href="https://btcacc.com/"
-                className="underline text-white"
-                target="_blank"
-              >
-                btc/acc hook
-              </a>{" "}
-              which adds an additional 1% fee per trade to automatically market
-              buy $cbBTC. This helps traders accumulate Bitcoin exposure while
-              trading meme coins.
+              trading $CONCERN. It features a 1% fee that goes directly to LP
+              providers. Currently acts as an additional liquidity source for
+              arbitrage bots to balance the price between ETH, CONCERN and
+              FLNCHY. Also it provides more visibility on Dex Screener.
             </p>
             <p className="text-sm">
               Ideal for concernors who are bullish on both $CONCERN and $ETH and
               doesn&apos;t care which they have more at one given time. It
               enables strategic profit-taking by selling $CONCERN during price
               increases and accumulating $CONCERN during dips, all while earning
-              LP fees and helping more speculative concernors to stack sats via
-              automated $cbBTC purchases.
+              LP fees.
             </p>
             <div className="mt-auto">
               <Badge
@@ -104,7 +95,7 @@ export default function Manifesto() {
               <h3 className="uppercase text-white flex flex-col gap-1">
                 FLNCHY/CONCERN
                 <span className="text-xs text-muted-foreground">
-                  (0.1% fee per trade)
+                  (1% fee per trade)
                 </span>
               </h3>
 
